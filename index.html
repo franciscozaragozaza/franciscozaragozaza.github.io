@@ -1,18 +1,21 @@
-<html> 
+---
+layout: default
+---
 
-<head> 
-<title> Francisco Zaragoza </title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
+<div class="home">
 
-  <body>
-  <div class="w3-panel w3-blue w3-allign-center">
-    <h1 class="w3-text-orange" style="text-shadow:1px 1px 0 #444">
-    <b>Me la pelas</b></h1>
-  </div>
-  <p><3</p>
-  
+  <h1 class="page-heading">Blog</h1>
 
-  </body>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-</html>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
