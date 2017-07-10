@@ -9,10 +9,10 @@
 title: Francisco Javier Zaragoza Zepeda
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Descripción del sitio.
+  Hosted by Github and powered by Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "fzaragoza.com" # the base hostname & protocol for your site
-github_username:  franciscozaragozaza
+github_username: franciscozaragozaza
 username: franciscozaragozaza
 # Build settings
 markdown: kramdown
